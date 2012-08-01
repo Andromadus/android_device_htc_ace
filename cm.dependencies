@@ -1,0 +1,11 @@
+[
+  {
+    "repository": "android_device_htc_msm7x30-common",
+    "target_path": "device/htc/msm7x30-common"
+  },
+  {
+    "repository": "htc-kernel-msm7x30",
+    "target_path": "kernel/htc/msm7x30",
+    "branch": "android-msm-2.6.35-ics"
+  }
+]
