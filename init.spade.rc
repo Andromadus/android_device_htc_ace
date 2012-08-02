@@ -26,6 +26,10 @@ on post-fs-data
     mkdir /data/misc/dhcp 0770 dhcp dhcp
     chown dhcp dhcp /data/misc/dhcp
 
+    # Symlink WiFi FW for Backward Compatibility
+    symlink /system/vendor/firmware/fw_bcmdhd.bin /system/vendor/firmware/fw_bcm4329.bin
+    symlink /system/vendor/firmware/fw_bcmdhd_apsta.bin /system/vendor/firmware/fw_bcm4329_apsta.bin
+
     # Set indication (checked by vold) that we have finished this action
     setprop vold.post_fs_data_done 1
 
