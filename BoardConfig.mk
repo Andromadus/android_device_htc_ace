@@ -63,9 +63,9 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 
-#TARGET_KERNEL_SOURCE := kernel/htc/jellytime
-#TARGET_KERNEL_CONFIG := cyanogen_spade_defconfig
-TARGET_PREBUILT_KERNEL := device/htc/ace/prebuilt/kernel
+#TARGET_KERNEL_SOURCE := kernel/htc/KangBanged-7x30
+#TARGET_KERNEL_CONFIG := kangbang_defconfig
+TARGET_PREBUILT_KERNEL := device/htc/ace/prebuilt/kernel/kernel
 
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -77,12 +77,11 @@ BOARD_HAS_NO_MISC_PARTITION := true
 
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun0
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun0/file
 
-#add support for ICS camera blobs
+# ICS COMPATIBILITY
 USE_CAMERA_STUB := false
 BOARD_NEEDS_MEMORYHEAPPMEM := true
-#DISABLE_HW_ID_MATCH_CHECK := true
 
 # RIL
 BOARD_USE_NEW_LIBRIL_HTC := true

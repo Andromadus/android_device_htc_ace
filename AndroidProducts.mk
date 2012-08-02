@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_ace.mk
+    $(LOCAL_DIR)/cm.mk
