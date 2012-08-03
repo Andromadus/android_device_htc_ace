@@ -41,13 +41,7 @@ PRODUCT_COPY_FILES += device/htc/ace/configs/gps.conf:system/etc/gps.conf
 PRODUCT_COPY_FILES += device/htc/ace/configs/AudioBTID.csv:system/etc/AudioBTID.csv
 
 # vold config
-PRODUCT_COPY_FILES += \
-    device/htc/ace/configs/vold.fstab:system/etc/vold.fstab
-	
-# media configs
-PRODUCT_COPY_FILES += \
-    device/htc/ace/configs/media_codecs.xml:system/etc/media_codecs.xml \
-    device/htc/ace/configs/audio_policy.conf:system/etc/audio_policy.conf
+PRODUCT_COPY_FILES += device/htc/ace/configs/vold.fstab:system/etc/vold.fstab
 
 # Audio DSP Profiles
 PRODUCT_COPY_FILES += \
