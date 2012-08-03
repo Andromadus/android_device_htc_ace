@@ -29,7 +29,7 @@ ro.ril.disable.fd.plmn.prefix=23402,23410,23411
 ro.ril.enable.sdr=1
 ro.ril.enable.amr.wideband=0
 
-# saga RF team request
+# ace RF team request
 ro.ril.enable.dtm=1
 ro.ril.gprsclass=12
 ro.ril.hsdpa.category=10
@@ -64,4 +64,3 @@ ro.camera.sound.disabled=1
 
 # USB Mounting
 persist.sys.usb.config=mass_storage,adb
-
