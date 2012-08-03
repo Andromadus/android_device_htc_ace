@@ -81,7 +81,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/ace/keylayout/keychars/atmel-touchscreen.kcm:system/usr/keychars/atmel-touchscreen.kcm \
     device/htc/ace/keylayout/keychars/synaptics-rmi-touchscreen.kcm:system/usr/keychars/synaptics-rmi-touchscreen.kcm \
-    device/htc/ace/keylayout/keychars/elan-touchscreen.kcm:system/usr/keychars/elan-touchscreen.kcm
+    device/htc/ace/keylayout/keychars/elan-touchscreen.kcm:system/usr/keychars/elan-touchscreen.kcm \
     device/htc/ace/keylayout/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
     device/htc/ace/keylayout/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
     device/htc/ace/keylayout/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
