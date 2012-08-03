@@ -1,1 +1,1 @@
-add_lunch_combo cm_holiday-userdebug
+add_lunch_combo cm_ace-userdebug
