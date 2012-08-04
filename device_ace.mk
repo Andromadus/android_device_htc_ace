@@ -110,9 +110,8 @@ PRODUCT_COPY_FILES += \
 # Kernel modules
 PRODUCT_COPY_FILES += \
     device/htc/ace/prebuilt/kernel/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
-    device/htc/ace/prebuilt/kernel/cpaccess.ko:system/lib/modules/cpaccess.ko \
     device/htc/ace/prebuilt/kernel/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
-	
+
 # CameraHAL
 PRODUCT_COPY_FILES += device/htc/ace/prebuilt/hal/camera.msm7x30.so:obj/lib/camera.msm7x30.so
 	
