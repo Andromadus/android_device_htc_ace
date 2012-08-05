@@ -100,17 +100,15 @@ PRODUCT_COPY_FILES += \
 # Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/htc/holiday/prebuilt/kernel/kernel
-else
-	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
-	
+
 # Kernel modules
 PRODUCT_COPY_FILES += \
     device/htc/ace/prebuilt/kernel/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
     device/htc/ace/prebuilt/kernel/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
+endif
 
 # CameraHAL
 PRODUCT_COPY_FILES += device/htc/ace/prebuilt/hal/camera.msm7x30.so:obj/lib/camera.msm7x30.so
