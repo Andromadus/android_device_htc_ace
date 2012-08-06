@@ -53,3 +53,4 @@
 /dev/msm_qcelp_in         0660   system     audio
 /dev/msm_wma              0660   system     audio
 /dev/msm_wmapro           0660   system     audio
+/sys/devices/virtual/usb_composite/*   enable      0664  root   system

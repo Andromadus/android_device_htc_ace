@@ -141,6 +141,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
+BT main.conf
+PRODUCT_COPY_FILES += \
+	system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
+
 # Extra properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enable_bypass=1 \
