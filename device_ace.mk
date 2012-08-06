@@ -99,7 +99,7 @@ PRODUCT_COPY_FILES += \
 
 # Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/htc/holiday/prebuilt/kernel/kernel
+	LOCAL_KERNEL := device/htc/ace/prebuilt/kernel/kernel
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
