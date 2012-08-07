@@ -170,7 +170,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_LOCALES += en_US
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/htc/ace/ace-vendor.mk)
+$(call inherit-product, vendor/htc/ace/ace-vendor.mk)
 
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
