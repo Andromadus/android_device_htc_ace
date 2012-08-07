@@ -115,10 +115,10 @@ PRODUCT_COPY_FILES += device/htc/ace/prebuilt/hal/camera.msm7x30.so:obj/lib/came
 	
 # BCM4329 WiFi firmware
 PRODUCT_COPY_FILES += \
-    device/htc/ace/firmware/fw_bcm4329.bin:system/vendor/firmware/fw_bcmdhd.bin \
-    device/htc/ace/firmware/fw_bcm4329_apsta.bin:system/vendor/firmware/fw_bcmdhd_apsta.bin \
-    device/htc/ace/firmware/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd
-	
+    device/htc/ace/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcmdhd.bin \
+    device/htc/ace/firmware/fw_bcm4329_apsta.bin:system/etc/firmware/fw_bcmdhd_apsta.bin \
+    device/htc/ace/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd
+
 # Filesystem management tools
 PRODUCT_PACKAGES += \
    make_ext4fs \

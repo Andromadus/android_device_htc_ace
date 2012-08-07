@@ -98,9 +98,8 @@ on boot
 
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
-# symlink wifi firmware for backward compatibility
-    symlink /system/vendor/firmware/fw_bcmdhd.bin /system/vendor/firmware/fw_bcm4329.bin
-    symlink /system/vendor/firmware/fw_bcmdhd_apsta.bin /system/vendor/firmware/fw_bcm4329_apsta.bin
+# symlink vendor fw paths
+    symlink /system/etc/firmware/ /system/vendor/firmware/
 
 service wpa_supplicant /system/bin/wpa_supplicant -Dnl80211 -iwlan0 -c/data/misc/wifi/wpa_supplicant.conf -e/data/misc/wifi/entropy.bin
     class main
