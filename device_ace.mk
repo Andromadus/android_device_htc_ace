@@ -43,6 +43,11 @@ PRODUCT_COPY_FILES += device/htc/ace/configs/AudioBTID.csv:system/etc/AudioBTID.
 # vold config
 PRODUCT_COPY_FILES += device/htc/ace/configs/vold.fstab:system/etc/vold.fstab
 
+# ACDB
+PRODUCT_COPY_FILES += \
+    device/htc/ace/configs/default.acdb:system/etc/firmware/default.acdb \
+    device/htc/ace/configs/default_org.acdb:system/etc/firmware/default_org.acdb
+
 # Audio DSP Profiles
 PRODUCT_COPY_FILES += \
     device/htc/ace/dsp/AdieHWCodec.csv:system/etc/AdieHWCodec.csv \
