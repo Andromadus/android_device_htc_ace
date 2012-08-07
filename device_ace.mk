@@ -109,11 +109,8 @@ PRODUCT_COPY_FILES += \
     device/htc/ace/prebuilt/kernel/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
     device/htc/ace/prebuilt/kernel/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
 endif
-
-# CameraHAL
-PRODUCT_COPY_FILES += device/htc/ace/prebuilt/hal/camera.msm7x30.so:obj/lib/camera.msm7x30.so
 	
-# BCM4329 WiFi firmware
+# BCM4329 firmware
 PRODUCT_COPY_FILES += \
     device/htc/ace/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcmdhd.bin \
     device/htc/ace/firmware/fw_bcm4329_apsta.bin:system/etc/firmware/fw_bcmdhd_apsta.bin \
