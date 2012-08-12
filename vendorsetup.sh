@@ -1,2 +1,2 @@
-add_lunch_combo aokp_ace-userdebug
-add_lunch_combo aokp_ace-eng
+add_lunch_combo ev_ace-userdebug
+add_lunch_combo ev_ace-eng
