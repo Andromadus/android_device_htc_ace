@@ -120,8 +120,8 @@ endif
 	
 # BCM4329 firmware
 PRODUCT_COPY_FILES += \
-    device/htc/ace/firmware/fw_bcm4329.bin:system/vendor/firmware/fw_bcmdhd.bin \
-    device/htc/ace/firmware/fw_bcm4329_apsta.bin:system/vendor/firmware/fw_bcmdhd_apsta.bin \
+    device/htc/ace/firmware/fw_bcm4329.bin:system/vendor/firmware/fw_bcm4329.bin \
+    device/htc/ace/firmware/fw_bcm4329_apsta.bin:system/vendor/firmware/fw_bcm4329_apsta.bin \
     device/htc/ace/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd
 
 # Filesystem management tools
