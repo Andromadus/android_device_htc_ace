@@ -35,7 +35,7 @@ PRODUCT_COPY_FILES += \
     device/htc/ace/ramdisk/ueventd.spade.rc:root/ueventd.spade.rc
 	
 # Media Profiles
-PRODUCT_COPY_FILES += device/htc/msm7x30-common/media_profiles.xml:system/etc/media_profiles.xml
+PRODUCT_COPY_FILES += device/htc/ace/media_profiles.xml:system/etc/media_profiles.xml
 
 # GPS config
 PRODUCT_COPY_FILES += device/htc/ace/configs/gps.conf:system/etc/gps.conf
