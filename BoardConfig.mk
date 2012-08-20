@@ -60,8 +60,8 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 
-TARGET_KERNEL_SOURCE := kernel/htc/KangBanged-7x30
-TARGET_KERNEL_CONFIG := kangbang_defconfig
+TARGET_KERNEL_SOURCE := kernel/htc/htc-kernel-msm7x30
+TARGET_KERNEL_CONFIG := kangbang_msm7230_defconfig
 #TARGET_PREBUILT_KERNEL := device/htc/ace/prebuilt/kernel/kernel
 
 BOARD_HAS_LARGE_FILESYSTEM := true
