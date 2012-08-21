@@ -17,3 +17,11 @@ PRODUCT_DEVICE := ace
 PRODUCT_BRAND := HTC
 PRODUCT_MODEL := Desire HD
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_ace BUILD_FINGERPRINT=google/yakju/maguro:4.1.1/JRO03L/330937:user/release-keys PRIVATE_BUILD_DESC="yakju-user 4.1.1 JRO03L 330937 release-keys"
+
+PRODUCT_PACKAGES += \
+    LegacyCamera
+
+# Gallery2 replacement - QuickPic
+PRODUCT_COPY_FILES +=  \
+    device/htc/ace/prebuilt/app/QuickPic.apk:system/app/Gallery2.apk \
+    device/htc/ace/prebuilt/lib/libqpicjni88.so:system/lib/libqpicjni88.so
