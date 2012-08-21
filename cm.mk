@@ -4,7 +4,7 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 # Release Name
 PRODUCT_RELEASE_NAME := DHD
 
-TARGET_BOOTANIMATION_NAME := vertical-480x800
+TARGET_BOOTANIMATION_NAME := vertical-480
 
 # Inherit CM stuff
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
