@@ -16,5 +16,8 @@ PRODUCT_BRAND := HTC
 PRODUCT_MODEL := Desire HD
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_ace BUILD_FINGERPRINT=google/yakju/maguro:4.1.1/JRO03L/330937:user/release-keys PRIVATE_BUILD_DESC="yakju-user 4.1.1 JRO03L 330937 release-keys"
 
+PRODUCT_COPY_FILES +=  \
+    device/htc/ace/prebuilt/bootanimation.zip:system/media/bootanimation.zip
+
 PRODUCT_PACKAGES += \
     Apollo
