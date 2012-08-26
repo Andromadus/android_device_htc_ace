@@ -17,7 +17,7 @@ on emmc-fs
    mkdir /devlog 0700 root root
 
    #mount all the things
-   mount_all fstab.ace
+   mount_all fstab.spade
 
 on post-fs
     chmod 0771 /cache
