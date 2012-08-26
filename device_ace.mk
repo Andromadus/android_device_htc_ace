@@ -31,6 +31,7 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/ace/overlay
 
 # Boot ramdisk setup
 PRODUCT_COPY_FILES += \
+    device/htc/ace/ramdisk/fstab.spade:root/fstab.spade \
     device/htc/ace/ramdisk/init.spade.rc:root/init.spade.rc \
     device/htc/ace/ramdisk/ueventd.spade.rc:root/ueventd.spade.rc
 	
