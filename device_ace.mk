@@ -39,6 +39,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/ace/configs/media_profiles.xml:system/etc/media_profiles.xml
 
+PRODUCT_NAME := full_ace
 # GPS config
 PRODUCT_COPY_FILES += device/htc/ace/configs/gps.conf:system/etc/gps.conf
 
