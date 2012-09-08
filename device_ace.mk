@@ -58,7 +58,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/ace/dsp/AdieHWCodec.csv:system/etc/AdieHWCodec.csv \
     device/htc/ace/dsp/AIC3254_REG.csv:system/etc/AIC3254_REG.csv \
-    device/htc/ace/dsp/AIC3254_REG_XD.csv:system/etc/AIC3254_REG_XD.csv \    
+    device/htc/ace/dsp/AIC3254_REG_XD.csv:system/etc/AIC3254_REG_XD.csv \
     device/htc/ace/dsp/CodecDSPID.txt:system/etc/CodecDSPID.txt \
     device/htc/ace/dsp/HP_Audio.csv:system/etc/HP_Audio.csv \
     device/htc/ace/dsp/HP_Video.csv:system/etc/HP_Video.csv \
