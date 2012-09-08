@@ -14,6 +14,7 @@ $(call inherit-product, device/htc/ace/device_ace.mk)
 
 PRODUCT_NAME := cm_ace
 PRODUCT_DEVICE := ace
-PRODUCT_BRAND := HTC
+PRODUCT_BRAND := htc_wwe
 PRODUCT_MODEL := Desire HD
+PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_ace BUILD_FINGERPRINT=google/yakju/maguro:4.1.1/JRO03L/330937:user/release-keys PRIVATE_BUILD_DESC="yakju-user 4.1.1 JRO03L 330937 release-keys"
