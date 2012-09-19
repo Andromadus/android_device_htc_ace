@@ -29,6 +29,9 @@
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
+    <!-- If this is true, the screen will fade off. -->
+    <bool name="config_animateScreenLights">false</bool>
+
     <!-- Flag indicating whether we should enable the automatic brightness in Settings.
          config_hardware_automatic_brightness_available is not set, so we will use software implementation -->
     <bool name="config_automatic_brightness_available">true</bool>
@@ -176,6 +179,10 @@
     <!-- Boolean indicating whether the wifi chipset has background scan support -->
     <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
 
+    <!-- Boolean indicating if current platform supports quick switch-on/off of
+         Bluetooth Module -->
+    <bool name="config_bluetooth_adapter_quick_switch">false</bool>
+
     <!-- Enables or disables fading edges when marquee is enabled in TextView. -->
     <bool name="config_ui_enableFadingMarquee">false</bool>
 
@@ -185,11 +192,11 @@
     <!-- Flag indicating whether we should enable automatic brightness for the button and keyboard backlights. -->
     <bool name="config_autoBrightnessButtonKeyboard">false</bool>
 
-    <!-- Flag indicating whether we should enable automatic brightness for the button and keyboard backlights. -->
-    <bool name="config_autoBrightnessButtonKeyboard">false</bool>
-
     <!-- Values greater or equal to 0 will enable electronbeam screen-on
-animation with the specified delay (in milliseconds), -1 will disable the animation -->
-    <integer name="config_screenOnAnimation">0</integer>
+    animation with the specified delay (in milliseconds), -1 will disable the animation -->
+    <integer name="config_screenOnAnimation">-1</integer>
+
+    <!-- True will enable the electron beam screen-off animation. -->
+    <bool name="config_screenOffAnimation">false</bool>
 
 </resources>
