@@ -47,15 +47,15 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>3</item>
-        <item>5</item>
-        <item>72</item>
-        <item>140</item>
-        <item>1450</item>
-        <item>2533</item>
-        <item>3990</item>
-        <item>5447</item>
-        <item>65535</item>
+         <item>160</item>
+         <item>225</item>
+         <item>320</item>
+         <item>640</item>
+         <item>1280</item>
+         <item>2600</item>
+         <item>5800</item>
+         <item>8000</item>
+         <item>10240</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -63,16 +63,16 @@
          than the size of the config_autoBrightnessLevels array.
     -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>41</item>
-        <item>51</item>
-        <item>61</item>
-        <item>71</item>
-        <item>95</item>
-        <item>130</item>
-        <item>186</item>
-        <item>208</item>
-        <item>231</item>
-        <item>255</item>
+        <item>45</item>
+	<item>55</item>
+	<item>65</item>
+	<item>80</item>
+	<item>100</item>
+	<item>122</item>
+	<item>160</item>
+	<item>198</item>
+	<item>231</item>
+	<item>255</item>
     </integer-array>
 
     <!-- Array of output values for button backlight corresponding to the LUX values
@@ -83,8 +83,8 @@
         <item>255</item>
         <item>255</item>
         <item>255</item>
-        <item>255</item>
-        <item>255</item>
+        <item>0</item>
+        <item>0</item>
         <item>0</item>
         <item>0</item>
         <item>0</item>
@@ -98,10 +98,10 @@
          Passion has no keyboard so all values are zero.
     -->
     <integer-array name="config_autoBrightnessKeyboardBacklightValues">
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
         <item>0</item>
         <item>0</item>
         <item>0</item>
