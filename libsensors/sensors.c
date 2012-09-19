@@ -75,7 +75,7 @@ struct sensors_module_t HAL_MODULE_INFO_SYM = {
         .version_major = 1,
         .version_minor = 0,
         .id = SENSORS_HARDWARE_MODULE_ID,
-        .name = "AK8975A & CM3602 Sensors Module",
+        .name = "AK8975A & ISL29028 Sensors Module",
         .author = "The Android Open Source Project",
         .methods = &sensors_module_methods,
     },
