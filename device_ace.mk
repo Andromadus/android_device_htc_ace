@@ -39,7 +39,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/ace/configs/media_profiles.xml:system/etc/media_profiles.xml
 
-PRODUCT_NAME := full_ace
 # GPS config
 PRODUCT_COPY_FILES += device/htc/ace/configs/gps.conf:system/etc/gps.conf
 
@@ -173,6 +172,9 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 
 # Set build date
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+
+# Fix bad lunch inheritance
+PRODUCT_NAME := cm_ace-userdebug
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi
