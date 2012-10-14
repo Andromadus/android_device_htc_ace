@@ -121,11 +121,12 @@ PRODUCT_COPY_FILES += \
     device/htc/ace/prebuilt/kernel/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
     device/htc/ace/prebuilt/kernel/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
 endif
-	
+
+# Copy bcm4329 firmware
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
+
 # BCM4329 firmware
 PRODUCT_COPY_FILES += \
-    device/htc/ace/firmware/fw_bcm4329.bin:system/vendor/firmware/fw_bcmdhd.bin \
-    device/htc/ace/firmware/fw_bcm4329_apsta.bin:system/vendor/firmware/fw_bcmdhd_apsta.bin \
     device/htc/ace/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd
 
 # Filesystem management tools
