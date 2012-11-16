@@ -4,9 +4,12 @@ on early-init
 
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
-    mkdir -p /storage/primary/legacy 0555 root root
+    mkdir /storage 0555 root root
+    mkdir /storage/primary 0555 root root
+    mkdir /storage/primary/legacy 0555 root root
     export EXTERNAL_STORAGE /storage/primary/legacy
 
+    #support all legacy paths
     symlink /storage/primary/legacy /sdcard
     symlink /storage/primary/legacy /mnt/sdcard
     symlink /storage/primary/legacy /storage/sdcard0
