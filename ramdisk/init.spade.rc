@@ -1,15 +1,13 @@
 import init.htc7x30.usb.rc
 
 on early-init
-
     mount debugfs /sys/kernel/debug /sys/kernel/debug
-
     mkdir /storage 0555 root root
     mkdir /storage/primary 0555 root root
     mkdir /storage/primary/legacy 0555 root root
     export EXTERNAL_STORAGE /storage/primary/legacy
 
-    #support all legacy paths
+    # Support legacy paths
     symlink /storage/primary/legacy /sdcard
     symlink /storage/primary/legacy /mnt/sdcard
     symlink /storage/primary/legacy /storage/sdcard0
@@ -17,9 +15,14 @@ on early-init
 
     setprop ro.crypto.tmpfs_options size=128m,mode=0771,uid=1000,gid=1000
 
-on emmc-fs
+on early-fs
    mkdir /devlog 0700 root root
 
+on fs
+   #mount all the things
+   mount_all fstab.spade
+
+on emmc-fs
    #mount all the things
    mount_all fstab.spade
 
