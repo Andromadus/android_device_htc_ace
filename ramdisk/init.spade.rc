@@ -34,7 +34,7 @@ on post-fs
 
 on post-fs-data
     # Prep for services
-    chmod 0771/data
+    chmod 0771 /data
     chown system system /data
     mkdir /data/radio 0770 radio radio
     mkdir /data/misc 1771 system misc
