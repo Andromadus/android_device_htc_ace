@@ -141,8 +141,9 @@ PRODUCT_PACKAGES += \
    FileManager \
    Torch
    
-# GPS / Lights / Sensors
+# GPS / BT / Lights / Sensors
 PRODUCT_PACKAGES += \
+    libbt-vendor \
     gps.spade \
     lights.spade \
     sensors.spade
