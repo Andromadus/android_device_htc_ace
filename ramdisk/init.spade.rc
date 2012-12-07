@@ -84,14 +84,13 @@ on boot
     chmod 0660        /sys/class/power_supply/battery/charger_control
 
     # SysFS bluetooth interface
-    chown bluetooth bluetooth /dev/ttyHS0
-    chmod 0600 /dev/ttyHS0
-    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
-    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
-    chmod 0660                /sys/class/rfkill/rfkill0/state
+    chown bluetooth net_bt_stack /dev/ttyHS0
+    chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/type
+    chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/state
+    chmod 0660 /sys/class/rfkill/rfkill0/state
 
     # Bluetooth MAC address path
-    chown bluetooth bluetooth /sys/module/htc_bdaddress/parameters/bdaddress
+    chown bluetooth net_bt_stack /sys/module/htc_bdaddress/parameters/bdaddress
     setprop ro.bt.bdaddr_path /sys/module/htc_bdaddress/parameters/bdaddress
 
     # Bluetooth car dock pin
@@ -169,13 +168,6 @@ service bugreport /system/bin/bugmailer.sh -v
     disabled
     oneshot
     keycodes 114 115 116
-
-service hciattach /system/bin/brcm_patchram_plus --enable_hci --enable_lpm \
-    --baudrate 3000000 --patchram /etc/firmware/bcm4329.hcd /dev/ttyHS0
-    class main
-    user bluetooth
-    group bluetooth net_bt_admin
-    disabled
 
 service rmt_storage /system/bin/rmt_storage /dev/block/mmcblk0p13 /dev/block/mmcblk0p14
     class core
