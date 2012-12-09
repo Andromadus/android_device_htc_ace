@@ -127,7 +127,7 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329
 
 # BCM4329 firmware
 PRODUCT_COPY_FILES += \
-    device/htc/ace/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd
+    device/htc/ace/firmware/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
