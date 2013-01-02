@@ -32,9 +32,9 @@
 /dev/radio_feedback       0660   radio      radio
 /dev/smd*                 0640   radio      radio
 
-/dev/ttyHS0               0660   bluetooth  net_bt_stack
+/dev/ttyHS0               0660   bluetooth  net_bluetooth
 /dev/ttyMSM0              0660   bluetooth  net_bt_stack
-/dev/uinput               0660   bluetooth  net_bt_stack
+/dev/uinput               0660   bluetooth  bluetooth
 
 /dev/msm_camera/*         0660   system     camera
 /dev/smd4                 0660   system     system
