@@ -132,13 +132,11 @@ PRODUCT_COPY_FILES += \
 # Filesystem management tools
 PRODUCT_PACKAGES += \
    make_ext4fs \
-   FileManager \
    e2fsck \
    setup_fs
 
 # Build extra non-CM packages
 PRODUCT_PACKAGES += \
-   FileManager \
    Torch
    
 # GPS / BT / Lights / Sensors
