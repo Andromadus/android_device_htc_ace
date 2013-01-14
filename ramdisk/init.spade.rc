@@ -110,6 +110,30 @@ on boot
     write /sys/block/mmcblk0/bdi/read_ahead_kb 2048
     write /sys/block/mmcblk1/bdi/read_ahead_kb 1024
 
+    # Network tweaks
+    write /proc/sys/net/ipv4/tcp_fin_timeout 30
+    write /proc/sys/net/ipv4/tcp_keepalive_intvl 30
+    write /proc/sys/net/ipv4/tcp_timestamps 1
+    write /proc/sys/net/ipv4/tcp_keepalive_time 1200
+    write /proc/sys/net/core/rmem_max 524288
+    write /proc/sys/net/core/wmem_max 524288
+    write /proc/sys/net/ipv4/tcp_tw_reuse 1
+    write /proc/sys/net/ipv4/tcp_window_scaling 1
+    write /proc/sys/net/ipv4/tcp_mem "8192 87380 524288"
+
+    # The next two settings will be overwritten every time
+    # the network type switches (wifi <-> umts etc.)
+    # so we start with wifi values to ensure best
+    # performance after boot.
+    write /proc/sys/net/ipv4/tcp_rmem "8192 87380 524288"
+    write /proc/sys/net/ipv4/tcp_wmem "8192 87380 393216"
+
+    setprop net.tcp.buffersize.wifi 8192,87380,524288,8192,87380,524288
+    setprop net.tcp.buffersize.hsdpa 8192,87380,524288,8192,65536,393216
+    setprop net.tcp.buffersize.umts 6144,87380,393216,6144,32768,283008
+    setprop net.tcp.buffersize.edge 4096,32768,220416,4096,32768,110208
+    setprop net.tcp.buffersize.gprs 4096,16384,32768,4096,11680,16384
+
 service wpa_supplicant /system/bin/wpa_supplicant -Dnl80211 -iwlan0 -c/data/misc/wifi/wpa_supplicant.conf -e/data/misc/wifi/entropy.bin
     class late_start
     socket wpa_wlan0 dgram 660 wifi wifi
