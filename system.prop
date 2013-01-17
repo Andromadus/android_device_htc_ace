@@ -64,3 +64,20 @@ ro.camera.sound.disabled=1
 
 # USB Mounting
 persist.sys.usb.config=mass_storage,adb
+
+# Disable kernel error checking
+ro.kernel.android.checkjni=0
+
+# Disable Sending Usage Data
+ro.config.nocheckin=1
+
+# Video Acceleration
+video.accelerate.hw=1
+debug.performance.tuning=1
+
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-rtsp=true
+media.stagefright.enable-record=false
