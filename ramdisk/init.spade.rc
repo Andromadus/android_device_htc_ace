@@ -205,6 +205,24 @@ service rmt_storage /system/bin/rmt_storage /dev/block/mmcblk0p13 /dev/block/mmc
     class core
     user root
 
+service htc_ebdlogd /system/bin/htc_ebdlogd -s -k -P 7
+    class main
+    user root
+    disabled
+    oneshot
+
+service htc_ebdlogd_rel /system/bin/htc_ebdlogd -s -k
+    class main
+    user root
+    disabled
+    oneshot
+
+on property:ro.build.tags=test-keys
+    start htc_ebdlogd
+
+on property:ro.build.tags=release-keys
+    start htc_ebdlogd_rel
+
 on property:ro.use_data_netmgrd=false
     # netmgr not supported on specific target
     stop netmgrd
