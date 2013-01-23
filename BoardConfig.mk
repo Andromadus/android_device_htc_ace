@@ -31,6 +31,9 @@
 # inherit from the proprietary version
 -include vendor/htc/ace/BoardConfigVendor.mk
 
+# Compiler Optimization
+ARCH_ARM_HIGH_OPTIMIZATION := true
+
 TARGET_BOOTLOADER_BOARD_NAME := spade
 
 BOARD_KERNEL_CMDLINE := no_console_suspend=1
