@@ -60,6 +60,8 @@
   </array>
   <!-- Power consumption in suspend -->
   <item name="cpu.idle">3.0</item> <!-- from /sys/class/power_supply/battery/current_now -->
+  <!-- Power consumption due to wake lock held -->
+  <item name="cpu.awake">10</item>
   <!-- Power consumption at different speeds -->
   <array name="cpu.active"> <!-- Estimated -->
       <value>55</value>
