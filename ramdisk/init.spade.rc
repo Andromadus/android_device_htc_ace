@@ -129,6 +129,15 @@ on boot
     write /sys/block/mmcblk0/bdi/read_ahead_kb 2048
     write /sys/block/mmcblk1/bdi/read_ahead_kb 1024
 
+    chown root.system /sys/devices/system/cpu/cpufreq/ondemand/boostpulse
+    chmod 664 /sys/devices/system/cpu/cpufreq/ondemand/boostpulse
+    chown root.system /sys/devices/system/cpu/cpufreq/interactive/boostpulse
+    chmod 664 /sys/devices/system/cpu/cpufreq/interactive/boostpulse
+
+    # Flash storage isn't a good entropy source, and only causes locking
+    # overhead in the kernel. Turn it off.
+    write /sys/block/mmcblk0/queue/add_random 0
+
     # Radio_feedback permissions
     chown radio radio /dev/radio_feedback
     chmod 0660 /dev/radio_feedback
