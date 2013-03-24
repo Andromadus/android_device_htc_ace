@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += \
     device/htc/ace/ramdisk/fstab.spade:root/fstab.spade \
     device/htc/ace/ramdisk/init.spade.rc:root/init.spade.rc \
     device/htc/ace/ramdisk/ueventd.spade.rc:root/ueventd.spade.rc
-	
+
 # Media Profiles
 PRODUCT_COPY_FILES += \
     device/htc/ace/configs/media_profiles.xml:system/etc/media_profiles.xml \
@@ -102,7 +102,7 @@ PRODUCT_COPY_FILES += \
     device/htc/ace/keylayout/keylayout/atmel-touchscreen.kl:system/usr/keylayout/atmel-touchscreen.kl \
     device/htc/ace/keylayout/keylayout/synaptics-rmi-touchscreen.kl:system/usr/keylayout/synaptics-rmi-touchscreen.kl \
     device/htc/ace/keylayout/keylayout/elan-touchscreen.kl:system/usr/keylayout/elan-touchscreen.kl
-	
+
 # Input device config
 PRODUCT_COPY_FILES += \
     device/htc/ace/idc/atmel-touchscreen.idc:system/usr/idc/atmel-touchscreen.idc \
@@ -111,7 +111,7 @@ PRODUCT_COPY_FILES += \
     device/htc/ace/idc/elan-touchscreen.idc:system/usr/idc/elan-touchscreen.idc
 
 # Kernel
-ifeq ($(TARGET_PREBUILT_KERNEL),)
+ifneq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/htc/ace/prebuilt/kernel/kernel
 
 PRODUCT_COPY_FILES += \
@@ -139,7 +139,7 @@ PRODUCT_PACKAGES += \
 # Build extra non-CM packages
 PRODUCT_PACKAGES += \
    Torch
-   
+
 # GPS / BT / Lights / Sensors
 PRODUCT_PACKAGES += \
     libbt-vendor \
@@ -157,7 +157,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     ro.com.google.gmsversion=2.3_r3 \
     persist.sys.scrollingcache=3
-	
+
 # Override /proc/sys/vm/dirty_ratio on UMS
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vold.umsdirtyratio=20
