@@ -144,6 +144,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbt-vendor \
     gps.spade \
+    librpc \
     lights.spade \
     sensors.spade
 
