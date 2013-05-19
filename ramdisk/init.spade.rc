@@ -128,6 +128,12 @@ on boot
     chown radio radio /dev/radio_feedback
     chmod 0660 /dev/radio_feedback
 
+    # Advanced settings
+    chown root system /sys/android_touch/sweep2wake
+    chmod 0664 /sys/android_touch/sweep2wake
+    chown root system /sys/kernel/fast_charge/force_fast_charge
+    chmod 0664 /sys/kernel/fast_charge/force_fast_charge
+
     # Use a reasonable min free value for low memory killer
     write /proc/sys/vm/min_free_kbytes 8192
 
