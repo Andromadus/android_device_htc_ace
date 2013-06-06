@@ -17,7 +17,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME "HTC Ace"
+#define BTM_DEF_LOCAL_NAME "Desire HD"
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
 
 #endif
