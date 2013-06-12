@@ -17,9 +17,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit common msm7x30 configs
 $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
 
-# stuff common to all HTC phones
-#$(call inherit-product, device/htc/common/common.mk)
-
 # HTC Audio
 $(call inherit-product, device/htc/ace/media_a1026.mk)
 $(call inherit-product, device/htc/ace/media_htcaudio.mk)
