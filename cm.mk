@@ -10,7 +10,7 @@ TARGET_BOOTANIMATION_NAME := 480
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit AOSP device configuration for ace
-$(call inherit-product, device/htc/ace/device_ace.mk)
+$(call inherit-product, device/htc/ace/device.mk)
 
 PRODUCT_NAME := cm_ace
 PRODUCT_DEVICE := ace
