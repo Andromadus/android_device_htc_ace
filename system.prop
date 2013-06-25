@@ -41,7 +41,7 @@ ro.ril.hsxpa=2
 ro.telephony.default_network=0
 
 wifi.interface=wlan0
-wifi.supplicant_scan_interval=30
+wifi.supplicant_scan_interval=120
 
 mobiledata.interfaces=gannet0,rmnet0,rmnet1,rmnet2
 
