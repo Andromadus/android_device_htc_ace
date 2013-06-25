@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2007 The Android Open Source Project
+<!-- Copyright (C) 2009 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,16 +14,10 @@
      limitations under the License.
 -->
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<mms_config version="4">
+    <!-- UAProf URL -->
+    <string name="uaProfUrl">http://www.htcmms.com.tw/Android/Common/ACE/ua-profile.xml</string>
 
-    <!-- LED Flashlight -->
-    <bool name="has_led_flash">true</bool>
-
-    <!-- Volume Rocker Wake Support. Some devices do not support (PMU) this.
-         Setting to false will disable Volume Rocker Wake support -->
-    <bool name="config_show_volumeRockerWake">true</bool>
-
-    <!-- Show Expanded Desktop preference -->
-    <bool name="config_show_expandedDesktop">true</bool>
-
-</resources>
+    <!-- User-Agent parameter used in MMS http request -->
+    <string name="userAgent">Ace</string>
+</mms_config>

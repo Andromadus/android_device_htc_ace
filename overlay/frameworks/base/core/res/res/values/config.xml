@@ -29,6 +29,9 @@
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
+    <!-- Default color for notification LED is green -->
+    <color name="config_defaultNotificationColor">#ff00ff00</color>
+
     <!-- If this is true, the screen will fade off. -->
     <bool name="config_animateScreenLights">false</bool>
 
@@ -123,10 +126,6 @@
 
     </integer-array>
 
-    <!-- Component name of the default wallpaper. This will be ImageWallpaper if not 
-         specified -->
-    <string name="default_wallpaper_component">com.android.wallpaper/.nexus.NexusWallpaper</string>
-
     <!-- Minimum screen brightness allowed by the power manager. -->
     <integer name="config_screenBrightnessDim">20</integer>
 
@@ -144,7 +143,6 @@
         <item>"mobile_dun,4,0,3,60000,true"</item>
         <item>"mobile_hipri,5,0,3,60000,true"</item>
         <item>"mobile_bluetooth,7,7,1,-1,true"</item>
-        <item>"wifi_p2p,13,1,0,-1,true"</item>
     </string-array>
 
     <!-- An Array of "[ConnectivityManager connectionType],
@@ -173,7 +171,7 @@
          bluetooth interfaces.  If the device doesn't want to support tethering over bluetooth this
          should be empty. -->
     <string-array translatable="false" name="config_tether_bluetooth_regexs">
-        <item>"bnep\\d"</item>
+        <item>"bt-pan"</item>
     </string-array>
 
     <!-- Array of ConnectivityManager.TYPE_xxxx values allowable for tethering -->
@@ -192,24 +190,14 @@
     <!-- Boolean indicating whether the wifi chipset has background scan support -->
     <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
 
-    <!-- Boolean indicating if current platform supports quick switch-on/off of
-         Bluetooth Module -->
-    <bool name="config_bluetooth_adapter_quick_switch">false</bool>
-
     <!-- Enables or disables fading edges when marquee is enabled in TextView. -->
     <bool name="config_ui_enableFadingMarquee">false</bool>
 
     <!-- Allow the menu hard key to be disabled in LockScreen on some devices -->
     <bool name="config_disableMenuKeyInLockScreen">true</bool>
 
-    <!-- Flag indicating whether we should enable automatic brightness for the button and keyboard backlights. -->
-    <bool name="config_autoBrightnessButtonKeyboard">false</bool>
-
-    <!-- Values greater or equal to 0 will enable electronbeam screen-on
-    animation with the specified delay (in milliseconds), -1 will disable the animation -->
-    <integer name="config_screenOnAnimation">-1</integer>
-
-    <!-- True will enable the electron beam screen-off animation. -->
-    <bool name="config_screenOffAnimation">false</bool>
+    <!-- If this value is true, The mms content-disposition field is supported correctly.
+         If false, Content-disposition fragments are ignored -->
+    <bool name="config_mms_content_disposition_support">false</bool>
 
 </resources>
